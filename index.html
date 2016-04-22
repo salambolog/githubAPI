@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>.GetHUb</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<nav class="navbar-inverse">
+</nav>
+<div class="container" ng-app="App">
+  <div ng-controller="Controller">
+    <div class="form-group">
+      <label for="">Github Username</label>
+      <input type="text" class="form-control" ng-model="username"></input>
+    </div>
+    <ul>
+      <li ng-repeat="event in events">
+      {{event.actor.login}} - {{event.repo.name}}
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="node_modules/angular/angular.js"></script>
+<script src="controller.js"></script>
+<script type="app.js"></script>
+</body>
+</html>

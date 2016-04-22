@@ -1,0 +1,23 @@
+.navbar-inverse {
+    background-image: linear-gradient(to bottom, #02B7D6 0, #02B7D6 100%);
+    border-color: #02B7D6;
+    height: 5.625em;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #02B7D6;
+}
+
+label {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em;
+}
+
+li {
+  color: #fff;
+}
